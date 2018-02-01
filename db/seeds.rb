@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+[[ "Fixing the hole.", "Where the rain comes in"],
+ [ "She's leaving home.", "Bye bye"],
+ [ "Celebrate my birthday.", "happy birthday, happy birthday"],
+ [" Drive my car.", "Go real far."]].each do |i,j|
+  Todo.create!(name: i, description: j)
+end
