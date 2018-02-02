@@ -4,7 +4,7 @@ class Api::V1::TodosController < Api::V1::BaseController
   end
 
   def create
-    respond_with :api, :v1, Todo.create(item_params)
+    respond_with :api, :v1, Todo.create(todo_params)
   end
 
   def destroy
@@ -13,13 +13,13 @@ class Api::V1::TodosController < Api::V1::BaseController
 
   def update
     todo = Todo.find(params["id"])
-    todo.update_attributes(item_params)
+    todo.update_attributes(todo_params)
     respond_with todo, json: todo
   end
 
   private
 
-  def item_params
-    params.require(:item).permit(:id, :name, :description)
+  def todo_params
+    params.require(:todo).permit(:id, :name, :description)
   end
 end
