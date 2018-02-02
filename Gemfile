@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'responders'
 gem 'webpacker'
 gem 'foreman'
+gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
