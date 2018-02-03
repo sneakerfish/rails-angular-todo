@@ -28,8 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'angular-rails-templates'
 gem 'responders'
-gem 'webpacker'
+gem 'webpacker', '~> 3.0'
 gem 'foreman'
 gem 'devise'
 
